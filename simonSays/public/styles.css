@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Squada One', cursive;
+}
+body{
+    background-color: antiquewhite;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    opacity: .5;
+}
+.square:hover{
+    cursor: pointer;
+}
+
+.red {
+    background-color: rgb(253, 86, 86);
+    box-shadow: 0px 10px 5px rgb(255, 0, 0);
+}
+
+.green {
+    background-color: rgb(158, 216, 72);
+    box-shadow: 0px 10px 5px rgb(115, 179, 19);
+}
+
+.blue {
+    background-color: rgb(13, 106, 212);
+    box-shadow: 0px 10px 5px rgb(9, 56, 109);
+}
+
+.yellow {
+    background-color: rgb(234, 236, 101);
+    box-shadow: 0px 10px 5px rgb(160, 161, 53);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+.start{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    letter-spacing: 4px;
+    padding:20px;
+    display:none;
+}
+.fail{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(97, 4, 4, 0.774);
+    z-index: 10000;
+    visibility: hidden;
+}
+.lostText{
+    color:white;
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -40%);
+    font-size: 130px;
+}
+.btnTryAgain{
+    position: fixed;
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -60%);
+    font-size: 50px;
+    padding:10px;
+    border:none;
+    border-radius: 10px;
+    display: block;
+    transition: all .2s ease;
+}
+.btnTryAgain:hover{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}
+.start:hover{cursor: pointer;}
+.howManyPlayers{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.numerSelector{
+    display:flex;
+    justify-content: center;
+    margin: 40px;
+    justify-content: space-around;
+}
+.howManyPlayers > h1{
+    font-size: 40px;
+}
+.numerSelector > button{
+    padding:0 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.numerSelector > button:hover{
+    cursor: pointer;
+}
+.okeiPlayers{
+    padding:0 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.okeiPlayers:hover{
+    cursor: pointer;
+}
+.current_scren{
+}
